@@ -1,0 +1,20 @@
+{
+  "name": "error-logger",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "node app/global-test-registery"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/darshanhegde27/Error-Logger.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/darshanhegde27/Error-Logger/issues"
+  },
+  "homepage": "https://github.com/darshanhegde27/Error-Logger#readme"
+}
