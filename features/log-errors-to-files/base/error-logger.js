@@ -4,7 +4,8 @@ const path = require('path');
 
 class ErrorLogger {
   constructor() {
-    this.logFilePath = path.join('error_logs.txt');
+    this.logFilePath = path.join(process.cwd(), 'error_logs.txt');
+    console.log("tester")
   }
 
  
@@ -12,7 +13,7 @@ class ErrorLogger {
     const timestamp = new Date().toISOString();
     const logMessage = `[${timestamp}] [${level}] - ${error.message}\nStack Trace: ${error.stack || 'No stack trace'}\nMetadata: ${JSON.stringify(metadata)}\n\n`;
 
-    // Append the error message to the log file
+    
     fs.appendFile(this.logFilePath, logMessage, (err) => {
       if (err) {
         console.error('Failed to write to log file:', err);
@@ -25,4 +26,4 @@ class ErrorLogger {
   }
 }
 
-module.exports = new ErrorLogger();
+module.exports = {ErrorLogger};

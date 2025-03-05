@@ -1,7 +1,8 @@
+const { GlobalFileErrorHandler } = require("..");
 
 
-const goal=require('../base/gloabl-error');
-const GlobalErrorHandler = new goal()
+console.log(new GlobalFileErrorHandler())
+
 
 setTimeout(() => {
   Promise.reject(new Error('Unhandled rejection example'));

@@ -1,6 +1,7 @@
-
-const globalErrorHandler = require('./app/features/log-errors-to-files/index');
+const { GlobalFileErrorHandler } = require("./features/log-errors-to-files");
 
 module.exports = {
-  globalErrorHandler
+    GlobalFileErrorHandler
 };
+
+

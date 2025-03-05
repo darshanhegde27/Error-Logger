@@ -1,10 +1,10 @@
 {
-  "name": "error-logger",
+  "name": "@d-l-i/error-logger",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "node app/global-test-registery"
+    "test": "node global-test-registery"
   },
   "repository": {
     "type": "git",
@@ -12,9 +12,13 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/darshanhegde27/Error-Logger/issues"
   },
-  "homepage": "https://github.com/darshanhegde27/Error-Logger#readme"
+  "homepage": "https://github.com/darshanhegde27/Error-Logger#readme",
+  "publishConfig": {
+  "access": "public"
+}
+
 }
